@@ -16,24 +16,24 @@ Request : {
             "Name": <String>, 
             "Age": <Integer> 
           }  
-Response 200 Request succeeded or 400 Badly formatted.
+Response : "200 Request succeeded or 400 Badly formatted.".
 
 2. GET http://localhost:8080/v1/auth but with BasicAuth instead of JWT auth
     (username - "user", password - "pass" or username - "admin", password - "admin")
-    Response 200 Authorization success or 401 Invalid authentication credentials.
+    Response : "200 Authorization success." or - "401 Invalid authentication credentials.".
  
 3. GET http://localhost:8080/v1/name/
-   Response 200 request succeeded. The structure below is returned.
+   Response : "200 
    {
     	"Names": ["name1", "name2", … , "nameN"]
-   }
+   }".
    
 4. SMTP Client. PUT http://localhost:8080/v1/message/smtp/ 
-   	Request { 
+   	Request : "{ 
    		       "message": <String>, 
    		       "address": <String> 
-   	        }  
-    Response 200 Message "message" sent to "address" or 400 Bad request.
+   	        }".  
+    Response : "200 Message "message" sent to "address."" or - "400 Bad request.".
     
      
 
