@@ -5,7 +5,7 @@ For app should be configured PostgreSQL DB and create database "names" schema
  "names". Or you can use other DB name and change it in queries in src/main/java/task/db/UserDao
  .java.
    
-Valid "in memory" login&pass are: "userDto" - "pass" and "admin" - "admin". There are in Secrets class.
+Valid "in memory" login&pass are: "user" - "pass" and "admin" - "admin". There are in Secrets class.
 For SMTP service change "email" and "password" (Mb change message subject) in src/main/java/task
 /smtp/SmtpService.java.
 
@@ -18,8 +18,8 @@ Request : {
           }  
 Response 200 Request succeeded or 400 Badly formatted.
 
-2. GET http://localhost:8080/v1/auth BasicAuth
-    (username - "userDto", password - "pass" or username - "admin", password - "admin")
+2. GET http://localhost:8080/v1/auth but with BasicAuth instead of JWT auth
+    (username - "user", password - "pass" or username - "admin", password - "admin")
     Response 200 Authorization success or 401 Invalid authentication credentials.
  
 3. GET http://localhost:8080/v1/name/
