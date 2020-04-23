@@ -9,7 +9,7 @@ Valid "in memory" login&pass are: "user" - "pass" and "admin" - "admin". There a
 For SMTP service change "email" and "password" (Mb change message subject) in src/main/java/task
 /smtp/SmtpService.java.
 
-Endpoints
+Endpoints:
 -
 1. PUT http://localhost:8080/v1/name 
 Request : { 
@@ -34,7 +34,3 @@ Response : "200 Request succeeded or 400 Badly formatted.".
    		       "address": <String> 
    	        }".  
     Response : "200 Message "message" sent to "address."" or - "400 Bad request.".
-    
-     
-
-   
