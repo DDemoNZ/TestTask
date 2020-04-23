@@ -1,0 +1,11 @@
+server:
+  applicationContextPath: /v1
+
+database:
+  driverClass: org.postgresql.Driver
+  user:
+  password:
+  url:
+
+  validationQuery: "SELECT 1"
+  validationQueryTimeout: 3s
